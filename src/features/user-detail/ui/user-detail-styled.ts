@@ -11,7 +11,7 @@ export const UserDetailWrapper = styled.div`
 `;
 
 export const DetailsInfo = styled.div`
-  font-size: 16px;
+  font-size: var(--font-md);
   color: hsl(0 0% 60%);
   & span {
     margin-left: 10px;
@@ -19,6 +19,6 @@ export const DetailsInfo = styled.div`
     font-weight: 500;
   }
   @media (max-width: 440px) {
-    font-size: 14px;
+    font-size: var(--font-sm);
   }
 `;

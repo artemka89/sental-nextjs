@@ -13,7 +13,7 @@ export const CommentListWrapper = styled.ul`
 export const CommentWrapper = styled.li`
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid hsl(0 0% 30%);
+  border: 1px solid hsl(var(--border-color));
   background-color: transparent;
 `;
 
@@ -24,7 +24,7 @@ export const CommentName = styled.span`
 `;
 
 export const CommentEmail = styled.span`
-  font-size: 14px;
+  font-size: var(--font-sm);
   opacity: 0.6;
 `;
 
@@ -34,7 +34,6 @@ export const CommentLine = styled.span`
 
 export const CommentBody = styled.div`
   margin-top: 10px;
-  font-size: 16px;
   &::first-letter {
     text-transform: uppercase;
   }

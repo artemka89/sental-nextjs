@@ -10,7 +10,7 @@ export const PostDetailWrapper = styled.div`
 `;
 
 export const PostTitle = styled.div`
-  font-size: 24px;
+  font-size: var(--font-xl);
   font-weight: 600;
   &::first-letter {
     text-transform: uppercase;
@@ -18,7 +18,7 @@ export const PostTitle = styled.div`
 `;
 
 export const PostBody = styled.div`
-  font-size: 18px;
+  font-size: var(--font-lg);
   &::first-letter {
     text-transform: uppercase;
   }
@@ -28,7 +28,7 @@ export const AuthorLink = styled(Link)`
   display: inline-block;
   padding: 5px 10px;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: var(--font-sm);
   text-decoration: none;
   color: inherit;
   background-color: hsl(19 31% 16%);

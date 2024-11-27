@@ -5,7 +5,7 @@ const FooterStyled = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: var(--header-height);
   margin-top: 20px;
   background-color: hsl(19 31% 16%);
 `;

@@ -14,7 +14,7 @@ export const UserItemLink = styled(Link)`
   cursor: pointer;
   @media (hover: hover) {
     &:hover {
-      background-color: hsl(19 31% 16%);
+      background-color: hsl(var(--card-hover-color));
     }
   }
 `;
@@ -27,12 +27,12 @@ export const UserItemInfoWrapper = styled.div`
 `;
 
 export const UserItemName = styled.div`
-  font-size: 18px;
+  font-size: var(--font-lg);
   font-weight: 500;
 `;
 
 export const UserItemEmail = styled.div`
-  font-size: 14px;
+  font-size: var(--font-sm);
   font-weight: 400;
-  color: hsl(0 0% 60%);
+  color: hsl(var(--secondary--color));
 `;
