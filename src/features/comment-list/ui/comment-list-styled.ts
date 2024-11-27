@@ -17,7 +17,9 @@ export const CommentWrapper = styled.li`
   background-color: transparent;
 `;
 
-export const CommentName = styled.span`
+export const CommentName = styled.p`
+  display: inline-block;
+  font-weight: 500;
   &::first-letter {
     text-transform: uppercase;
   }
@@ -30,9 +32,10 @@ export const CommentEmail = styled.span`
 
 export const CommentLine = styled.span`
   margin: 0 10px;
+  opacity: 0.6;
 `;
 
-export const CommentBody = styled.div`
+export const CommentBody = styled.p`
   margin-top: 10px;
   &::first-letter {
     text-transform: uppercase;

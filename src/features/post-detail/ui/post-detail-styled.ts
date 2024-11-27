@@ -15,12 +15,18 @@ export const PostTitle = styled.div`
   &::first-letter {
     text-transform: uppercase;
   }
+  @media (max-width: 440px) {
+    font-size: var(--font-lg);
+  }
 `;
 
 export const PostBody = styled.div`
   font-size: var(--font-lg);
   &::first-letter {
     text-transform: uppercase;
+  }
+  @media (max-width: 440px) {
+    font-size: var(--font-md);
   }
 `;
 
