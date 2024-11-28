@@ -5,6 +5,13 @@ import { getPostDetails } from '@/shared/api/get-post-details';
 
 import { Container } from '@/shared/ui/layouts/container';
 
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const post = await getPostDetails(params.id);
+  return {
+    title: `Post | ${post?.title}`,
+  };
+}
+
 export default async function PostPage({ params }: { params: { id: string } }) {
   const post = await getPostDetails(params.id);
 

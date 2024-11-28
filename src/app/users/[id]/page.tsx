@@ -3,6 +3,13 @@ import { UserDetails } from '@/features/user-detail';
 import { PostList } from '@/features/post-list';
 import { getUserDetails } from '@/shared/api/get-user-details';
 
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const user = await getUserDetails(params.id);
+  return {
+    title: `User | ${user?.name}`,
+  };
+}
+
 export default async function UserDetailsPage({
   params,
 }: {
